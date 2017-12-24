@@ -12,5 +12,19 @@
 */
 
 Route::get('/', function () {
-    return view('main');
+    return view('Home.home');
+});
+
+
+Route::get('/contact', function () {
+    return view('Contact.index');
+});
+
+Route::get('/account', function () {
+    return view('Users.login');
+});
+
+
+Route::get('/signup', function () {
+    return view('Users.signup');
 });
